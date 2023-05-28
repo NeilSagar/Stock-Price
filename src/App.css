@@ -1,38 +1,262 @@
-.App {
+
+body{
+  background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+  background-color: #5C469C;
+}
+
+.form{
+  text-align: center;
+  background-color: #efe3e3a0;
+  width:400px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top:150px;
+  padding:20px;
+  border-radius: 20px;
+}
+.form input{
+  width:70%;
+  margin:10px;
+  font-size: 20px;
+  padding:10px;
+  padding-left:10px;
+  border:2px solid #5C469C;
+  border-radius: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form button{
+  margin-top:20px;
+  
+  padding:10px;
+  width:150px;
+  font-size:16px;
+  border-radius: 18px;
+  border:0;
+  background-color: #5C469C;
+  color:#F6F1F1;
+}
+hr{
+  margin-top:0;
+  border:0;
+  border-top:8px dotted #5C469C;
+  width:25%;
+}
+.form button:hover{
+  cursor: pointer;
+}
+.form p{
+  margin:0;
+  color:#8387a3;
+  margin-bottom:3px;
+}
+.form p span{
+  color:red;
+}
+.google-button{
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar h1{
+  font-family: 'Dancing Script', cursive;
+  margin:0;
+  float: left;
+  padding:50px;
+  padding-top:0;
+  padding-left:30px;
+  padding-bottom:10px;
+  color:white;
+  font-size:48px;
+  font-weight:700;
+}
+.navbar h1 span{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.navbar{
+  background-color: #ACBCFF;
+  overflow: hidden;
+}
+.photo-sec{
+  margin:30px;
+  margin-bottom:10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashbody{
+  width:70%;
+  margin-left:200px;
+  margin-right:auto;
+  position: relative;
+}
+
+.alerts{
+  width:100%;
+  position: relative;
+  top:-19px;
+}
+
+.dashbody h2{
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  color:#efeff1;
+}
+.dashbody .search-bar{
+
+  width:50%;
+  font-size:28px;
+  margin:0;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  /* border:2px solid #B799FF; */
+  border:0;
+  border-right:0;
+  padding-left:30px;
+  background-color: #efeff1;
+}
+.dashbody input:focus{
+  outline-width: 0;
+}
+.dashbody .search-date{
+  width:180px;
+  font-size:20px;
+  padding:5px;
+  padding-left:20px;
+  padding-right:20px;
+  margin-left:0;
+  background-color: #5C469C;
+  border:0;
+  color:#efeff1;
+}
+.dashbody .search-date:hover{
+  background-color: #ACBCFF;
+  cursor: pointer;
+  color:#5C469C;
+}
+.search-sec{
+  display:flex;
+}
+
+.getPrice-button{
+  font-size:32px;
+  margin:0;
+  padding-top:15px;
+  padding-bottom:15px;
+  width:70px;
+  background-color: white;
+  color:#5C469C;
+  /* border:2px solid #B799FF; */
+  border:0;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.getPrice-button:hover{
+  background-color: #ACBCFF;
+  color:#ffffff;
+  cursor:pointer;
+}
+
+
+.card{
+  width:50%;
+  margin-left:130px;
+  margin-top:20px;
+}
+
+.whatsappmsg-box{
+  background-color: #F6F1F1;
+  box-shadow: 0 4px 7px #5C469C;
+  width: 330px;
+  height:150px;
+  line-height: 1.5;
+  position: relative;
+  border-radius: 10px;
+
+}
+.whatsappmsg-box h3{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin:0;
+  padding:15px;
+  color:rgb(0, 0, 0);
+  font-size: 28px;
+  text-align: center;
+}
+.whatsappmsg-box h3 {
+  font-size: 30px;
+  color:#5C469C;
+}
+.card-body{
+  margin:20px;
+  text-align: center;
+}
+.card-body .card-price{
+  font-size:28px;
+
+}
+.card-body p{
+  margin:0;
+}
+.card-price span{
+  position: relative;
+  bottom:2px;
+}
+.msg-sec .button{
+  box-shadow: 0 4px 7px #5C469C;
+  position: absolute;
+  right:20px;
+  bottom:-20px;
+  width:50px;
+  height:50px;
+  background-color: #25D366;
+  border:0;
+  border-radius: 10px;
+  color:white;
+}
+.msg-sec .button:hover{
+  cursor: pointer;
+  background-color: #07ae44;
+}
+
+.footer{
+  position:absolute;
+  bottom:0;
+  overflow: hidden;
+  background-color: #ACBCFF;
+  width:100%;
+}
+
+.logout-button{
+  margin:0;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:15px;
+  background-color: #5C469C;
+  color:#efeff1;
+  font-weight: 600;
+  width:120px;
+  margin-left:auto;
+  font-size:20px;
+}
+
+.logout-button:hover{
+  background-color:#FF6969;
+  cursor: pointer;
+}
+.logout-button span{
+  position:relative;
+  bottom:6px;
+}
+.logout-sec{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+} 
+.copyright{
+  text-align: center;
+  position: relative;
+  left:45%;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copyright span{
+  color:#932121;
+  font-size: 24px;
 }
